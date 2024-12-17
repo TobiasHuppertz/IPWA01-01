@@ -1,16 +1,34 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
+import { navbar } from '../constants';
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <>
-    <div className="h-20 w-full bg-slate-200">
-        Header
-        <Link to="./forms/spende"> 
-        <button className="mx-4 my-4 bg-cyan-300 rounded-md">
-            Spende
-        </button>
+    <nav className="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link to="../" className="flex items-center space-x-3">
+          <img src="../src/assets/humanita_logo.svg" alt="Logo" className="h-10" />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap">Huminata</span>
         </Link>
-    </div>
-    </> 
-  )
+        <div className="flex md:order-2 space-x-3 md:space-x-0">
+          <Link to="./forms/spende">
+            <button type="button"
+              className="text-white bg-green-600 hover:bg-green-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Spenden
+            </button>
+          </Link>
+        </div>
+        <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white">
+            {navbar.map((item) => (
+              <li key={item.id}>
+                <Link to={item.url} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-500">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
