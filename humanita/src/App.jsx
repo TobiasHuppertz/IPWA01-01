@@ -11,10 +11,10 @@ export default function App() {
     <>
         <Header />
         <ContentLayout>
-        <section id="Link1"><Section1 /></section> 
-        <section id="Link2"><Section2 /></section> 
-        <section id="Link3"><Section3 /></section> 
-        <section id="Link4"><Section4 /></section>
+          <section id="Link1"><Section1 /></section> 
+          <section id="Link2"><Section2 /></section> 
+          <section id="Link3"><Section3 /></section> 
+          <section id="Link4"><Section4 /></section>
         </ContentLayout>
         <Footer />
     </>
