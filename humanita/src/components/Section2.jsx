@@ -1,5 +1,5 @@
 export default function section2() {
   return (
-    <div>section2</div>
+    <div className="h-screen">section2</div>
   )
 }
