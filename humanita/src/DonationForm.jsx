@@ -1,13 +1,11 @@
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header'; 
 
-const DonationForm = () => {
+export default function DonationForm() {
   return (
     <>
-      <Header />
-      <Outlet />
+    <Header />
+    <Outlet />
     </>
-  );
-};
-
-export default DonationForm;
+  )
+}

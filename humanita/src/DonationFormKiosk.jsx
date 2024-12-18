@@ -1,11 +1,9 @@
 import { Outlet } from 'react-router-dom';
 
-const DonationFormKiosk = () => {
+export default function DonationFormKiosk() {
   return (
     <>
-      <Outlet />
+    <Outlet />
     </>
-  );
-};
-
-export default DonationFormKiosk;
+  )
+}
