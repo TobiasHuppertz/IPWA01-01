@@ -20,3 +20,69 @@ export const navbar = [
         url: '#Link4'
     }
 ]
+
+export const legals = [
+    {
+      id: 1,
+      label: 'Kontakt',
+      type: 'text',
+      href: './kontakt'
+    },
+    {
+      id: 2,
+      label: 'Impressum',
+      type: 'text',
+      href: './impressum'
+    },
+    {
+      id: 3,
+      label: 'Datenschutz',
+      type: 'text',
+      href: './datenschutz'
+    },
+    {
+      id: 4,
+      label: 'Einstellungen',
+      type: 'text',
+      href: './einstellungen'
+    },
+    {
+      id: 5,
+      label: 'Datenverarbeitug',
+      type: 'text',
+      href: './datenverarbeitung'
+    },
+    {
+      id: 6,
+      label: 'Barrierefreiheit',
+      type: 'text',
+      href: './barrierefreiheit'
+    },
+]
+
+export const socials = [
+    {
+      id: 1,
+      label: 'Facebook',
+      imgSrc: '../src/assets/socials/facebook_logo.svg',
+      href: 'https://facebook.com'
+    },
+    {
+      id: 2,
+      label: 'Instagram',
+      imgSrc: '../src/assets/socials/instagram_logo.svg',
+      href: 'https://instagram.com'
+    },
+    {
+      id: 3,
+      label: 'X',
+      imgSrc: '../src/assets/socials/x_logo.svg',
+      href: 'https://x.com'
+    },
+    {
+      id: 4,
+      label: 'Youtube',
+      imgSrc: '../src/assets/socials/youtube_logo.svg',
+      href: 'https://youtube.com',
+    },
+  ]

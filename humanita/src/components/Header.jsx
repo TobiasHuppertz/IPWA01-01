@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="../" className="flex items-center space-x-3">
           <img src="../src/assets/humanita_logo.svg" alt="Logo Humanita" className="h-10" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">Huminata</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap">Humanita</span>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0">
           <Link to="./forms/spende">
