@@ -6,8 +6,8 @@ export const navbar = [
     },
     {
         id: 2,
-        title: 'Link2',
-        url: '#Link2'
+        title: 'Service',
+        url: '#Service'
     },
     {
         id: 3,
@@ -91,7 +91,7 @@ export const socials = [
     header: 'Gemeinsam Wärme schenken: Deine Kleiderspende zählt!',
     text: 'In unseren Schränken schlummern ungenutzte Schätze. Mit deiner Kleiderspende an Huminata hilfst du Bedürftigen. Jede Jacke, jedes Paar Schuhe und jeder Pullover bringt Wärme, Freude und Hoffnung. Gemeinsam machen wir den Unterschied.',
     bgSrc: '../src/assets/hero.jpeg'
-  };
+  }
 
   export const philosophy = {
     header: 'Helfen ist unsere Herzensangelegenheit',
@@ -101,5 +101,16 @@ export const socials = [
     img1Alt: 'Helfende stehen umarmend im Kreis, Perspektive von unten',
     img2Scr: '../src/assets/philosophy/philosophy_2.jpeg',
     img2Alt: 'Helferin steht am Tisch und sortiert Kleidung'
+  }
+
+  export const service = {
+    header: 'Bequeme Kleiderspende bei Huminata: Einfach und flexibel',
+    paragraph: 'Bei Huminata machen wir das Spenden deiner Kleidungsstücke so einfach wie möglich. Wir bieten dir die Möglichkeit, deine Spenden bequem von zu Hause abholen zu lassen. Unser Transporter kommt direkt zu dir und nimmt die Kleidung entgegen. Alternativ kannst du deine Spenden auch persönlich an unserer Geschäftsstelle abgeben. Gemeinsam machen wir es unkompliziert, Wärme und Freude zu schenken.',
+    imgBigSrc: '../src/assets/service/warehouse.jpeg',
+    imgBigAlt: 'Lagerhalle, in der Kartons mit Kleidern stehen',
+    imgService1Src: '../src/assets/service/pickup.jpeg',
+    imgService1Alt: 'Helfer räumt Kleiderspenden in einen Transporter.',
+    imgService2Src: '../src/assets/service/office.jpeg',
+    imgService2Alt: 'Eingang einer Lagerhalle mit Büro',
   }
   
