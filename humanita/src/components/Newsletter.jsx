@@ -1,10 +1,14 @@
+import { newsletter } from "../constants"
+
 export default function pageNewsletter() {
     return (
       <div className="relative isolate overflow-hidden bg-teal-50 py-16 px-6 lg:px-8 sm:py-24 lg:py-32 flex justify-center items-center">
         <div className="max-w-lg lg:max-w-xl">
-            <h2 className="font-Merriweather text-xl lg:text-3xl text-center font-semibold tracking-tight">Abonniere unseren Newsletter</h2>
-            <p className="mt-4 px-6 text-sm text-center lg:text-lg text-gray-600">
-                Verpassen Sie keine Neuigkeiten mehr von Huminata! Unser Newsletter hält Sie stets auf dem Laufenden über unsere aktuellen Projekte, Veranstaltungen und Möglichkeiten, wie Sie sich engagieren können.
+            <h2 className="font-Merriweather text-xl lg:text-3xl text-center font-semibold tracking-tight">
+                {newsletter.header}
+            </h2>
+            <p className="mt-4 px-6 text-sm text-center lg:text-base text-gray-600">
+                {newsletter.paragraph}
             </p>
             <div className="mt-6 px-6 flex gap-x-4 justify-center">
                 <label htmlFor="email-address" className="sr-only">

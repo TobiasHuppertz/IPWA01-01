@@ -111,6 +111,10 @@ export const socials = [
     imgService1Src: '../src/assets/service/pickup.jpeg',
     imgService1Alt: 'Helfer räumt Kleiderspenden in einen Transporter.',
     imgService2Src: '../src/assets/service/office.jpeg',
-    imgService2Alt: 'Eingang einer Lagerhalle mit Büro',
+    imgService2Alt: 'Eingang einer Lagerhalle mit Büro'
   }
   
+  export const newsletter = {
+    header: 'Abonniere unseren Newsletter',
+    paragraph: 'Verpassen Sie keine Neuigkeiten mehr von Huminata! Unser Newsletter hält Sie stets auf dem Laufenden über unsere aktuellen Projekte, Veranstaltungen und Möglichkeiten, wie Sie sich engagieren können.'
+  }
