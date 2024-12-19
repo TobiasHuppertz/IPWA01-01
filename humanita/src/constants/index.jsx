@@ -86,3 +86,10 @@ export const socials = [
       href: 'https://youtube.com',
     },
   ]
+
+  export const hero = {
+    header: 'Gemeinsam Wärme schenken: Deine Kleiderspende zählt!',
+    text: 'In unseren Schränken schlummern ungenutzte Schätze. Mit deiner Kleiderspende an Huminata hilfst du Bedürftigen. Jede Jacke, jedes Paar Schuhe und jeder Pullover bringt Wärme, Freude und Hoffnung. Gemeinsam machen wir den Unterschied.',
+    bgSrc: '../src/assets/hero.jpeg'
+  };
+  
