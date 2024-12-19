@@ -5,6 +5,7 @@ import Philosopy from "./components/philosophy"
 import Service from "./components/Service"
 import Section3 from "./components/section3"
 import Section4 from "./components/section4"
+import Newsletter from "./components/Newsletter"
 import Footer from "./components/Footer"
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
           <section id="Link3"><Section3 /></section> 
           <section id="Link4"><Section4 /></section>
         </ContentLayout>
+        <Newsletter />
         <Footer />
     </>
   )
