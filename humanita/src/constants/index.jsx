@@ -1,8 +1,8 @@
 export const navbar = [
     {
         id : 1,
-        title: 'Link1',
-        url: '#Link1'
+        title: 'Philosophie',
+        url: '#Philosophie'
     },
     {
         id: 2,
@@ -92,4 +92,14 @@ export const socials = [
     text: 'In unseren Schränken schlummern ungenutzte Schätze. Mit deiner Kleiderspende an Huminata hilfst du Bedürftigen. Jede Jacke, jedes Paar Schuhe und jeder Pullover bringt Wärme, Freude und Hoffnung. Gemeinsam machen wir den Unterschied.',
     bgSrc: '../src/assets/hero.jpeg'
   };
+
+  export const philosophy = {
+    header: 'Helfen ist unsere Herzensangelegenheit',
+    paragraph1: 'Humanita ist mehr als nur eine Organisation, die Kleidung sammelt und verteilt. Unsere Philosophie basiert auf der Überzeugung, dass jede gespendete Kleidung ein Zeichen der Menschlichkeit und Solidarität ist. Wir glauben daran, dass wir gemeinsam eine Gemeinschaft schaffen können, in der niemand ohne die Grundbedürfnisse des Lebens auskommen muss.',
+    paragraph2: 'Bei Humanita geht es nicht nur um die physische Unterstützung durch Kleidung, sondern auch um das Vermitteln von Hoffnung und Würde. Wir sind der festen Überzeugung, dass jeder Mensch das Recht auf ein würdevolles Leben hat, unabhängig von seiner finanziellen Lage. Kleidung ist dabei ein Mittel, um nicht nur Wärme und Schutz zu bieten, sondern auch ein Gefühl der Zugehörigkeit und Wertschätzung.',
+    img1Scr: '../src/assets/philosophy/philosophy_1.jpeg',
+    img1Alt: 'Helfende stehen umarmend im Kreis, Perspektive von unten',
+    img2Scr: '../src/assets/philosophy/philosophy_2.jpeg',
+    img2Alt: 'Helferin steht am Tisch und sortiert Kleidung'
+  }
   
