@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-gray-500 text-sm font-medium mb-6">
       {legals.map((items) => (
         <div key={items.id}>
-          <a href={items.href} className="hover:text-gray-700">{items.label}</a>
+          <a href={items.href} className="font-SourceSans hover:text-gray-700">{items.label}</a>
         </div>
       ))}
     </div> 
@@ -25,7 +25,7 @@ export default function Footer() {
       </a>
         ))}
     </div>
-    <p className="text-gray-500 text-xs md:text-sm">
+    <p className="font-SourceSans text-gray-500 text-xs md:text-sm">
       &copy; 2024 Humanita 
     </p>
   </footer>
