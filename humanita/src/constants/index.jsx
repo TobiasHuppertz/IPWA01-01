@@ -16,8 +16,8 @@
       },
       {
           id: 4,
-          title: 'Link4',
-          url: '#Link4'
+          title: 'Blog',
+          url: '#Blog'
       }
   ]
 
@@ -180,3 +180,36 @@
       projectText: 'In Berlin-Tegel befindet sich das größte Flüchtlingslager Deutschlands, in dem über 5.000 Menschen auf Unterstützung angewiesen sind.',
     }
   ]
+
+  export const blog = [
+    {
+      id: 1,
+      name: 'Lieferung nach Odessa',
+      date: '11 Feb. 2024',
+      imgSrc: '../src/assets/blog/blog_ukraine.jpeg',
+      imgAlt: 'Freiwillige Helfer arbeiten in einer Lagerhalle in der Ukraine.',
+      blogHeader: 'Unterstützung in Odessa: Huminata im Einsatz',
+      blogText: 'Derzeit sind wir direkt in Odessa vor Ort und leisten dringend benötigte Hilfe und Unterstützung für die örtliche Gemeinschaft.',
+      blogUrl: '#blog'
+    },
+    {
+      id: 2,
+      name: 'Projekt in Philippinen',
+      date: '23 Mai 2024',
+      imgSrc: '../src/assets/blog/blog_philippines.jpeg',
+      imgAlt: 'Zerstörtes Dorf auf den Philippinen',
+      blogHeader: 'Hilfe auf den Philippinen: Zusammen stark in der Inselwelt',
+      blogText: 'Auf den Philippinen arbeiten wir eng mit lokalen Organisationen zusammen, um bedürftigen Gemeinschaften umfassend zu helfen. Unsere Projekte erstrecken sich über mehrere Inseln und erreichen Menschen in abgelegenen Gebieten, die oft vergessen werden.',
+      blogUrl: '#blog'
+    },
+    {
+      id: 3,
+      name: 'Projekt in Bolivien',
+      date: '5 Nov. 2024',
+      imgSrc: '../src/assets/blog/blog_bolivia.jpeg',
+      imgAlt: 'Traditionelles Dorf in den Anden',
+      blogHeader: 'Bolivien: Gemeinsam für eine bessere Zukunft',
+      blogText: 'Besonders in den kalten Wintermonaten ist warme Kleidung von unschätzbarem Wert. In Bolivien haben wir bei Huminata eine bedeutende Partnerschaft mit lokalen Gemeinden in den Anden aufgebaut.',
+      blogUrl: '#blog'
+    }
+  ]  

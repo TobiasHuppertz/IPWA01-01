@@ -14,16 +14,16 @@ export default function pageProjects() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
-          {projects.map((items) => (
-            <Link to="" key={items.id} className="w-full flex flex-col mb-4 rounded-lg bg-gray-100">
+          {projects.map((item) => (
+            <Link to="" key={item.id} className="w-full flex flex-col mb-4 rounded-lg bg-gray-100">
               <div className="max-h-[300px] overflow-hidden rounded-lg shadow-xl relative">
-                <img className="w-full" src={items.imgProjectSrc} alt={items.imgProjectAlt} />
+                <img className="w-full" src={item.imgProjectSrc} alt={item.imgProjectAlt} />
               </div>
               <div className="flex items-baseline w-full">
-                <h3 className="font-Merriweather text-2xl p-4">{items.name}</h3>
-                <img className="w-8 h-5 rounded-sm" src={items.imgFlagSrc} alt={items.imgFlagAlt} />
+                <h3 className="font-Merriweather text-2xl p-4">{item.name}</h3>
+                <img className="w-8 h-5 rounded-sm" src={item.imgFlagSrc} alt={item.imgFlagAlt} />
               </div>
-              <p className="font-SourceSans text-pretty p-4">{items.projectText}</p>
+              <p className="font-SourceSans text-pretty p-4">{item.projectText}</p>
             </Link>
           ))}
         </div>

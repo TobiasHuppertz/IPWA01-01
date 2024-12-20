@@ -4,7 +4,7 @@ import ContentLayout from "./ContentLayout"
 import Philosophy from "./components/philosophy"
 import Service from "./components/Service"
 import Projects from "./components/Projects"
-import Section4 from "./components/section4"
+import Blog from "./components/Blog"
 import Newsletter from "./components/Newsletter"
 import Footer from "./components/Footer"
 
@@ -17,7 +17,7 @@ export default function App() {
           <section id="Philosophie"><Philosophy /></section> 
           <section id="Service"><Service /></section> 
           <section id="Projekte"><Projects /></section> 
-          <section id="Link4"><Section4 /></section>
+          <section id="Blog"><Blog /></section>
         </ContentLayout>
         <Newsletter />
         <Footer />
