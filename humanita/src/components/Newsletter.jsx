@@ -7,7 +7,7 @@ export default function pageNewsletter() {
             <h2 className="font-Merriweather text-xl lg:text-3xl text-center font-semibold tracking-tight">
                 {newsletter.header}
             </h2>
-            <p className="mt-4 px-6 text-sm text-center lg:text-base text-gray-600">
+            <p className="mt-4 px-6 text-sm text-center lg:text-base text-pretty text-gray-600">
                 {newsletter.paragraph}
             </p>
             <div className="mt-6 px-6 flex gap-x-4 justify-center">

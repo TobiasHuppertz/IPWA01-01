@@ -1,91 +1,91 @@
-export const navbar = [
-    {
-        id : 1,
-        title: 'Philosophie',
-        url: '#Philosophie'
-    },
-    {
-        id: 2,
-        title: 'Service',
-        url: '#Service'
-    },
-    {
-        id: 3,
-        title: 'Link3',
-        url: '#Link3'
-    },
-    {
-        id: 4,
-        title: 'Link4',
-        url: '#Link4'
-    }
-]
-
-export const legals = [
-    {
-      id: 1,
-      label: 'Kontakt',
-      type: 'text',
-      href: './kontakt'
-    },
-    {
-      id: 2,
-      label: 'Impressum',
-      type: 'text',
-      href: './impressum'
-    },
-    {
-      id: 3,
-      label: 'Datenschutz',
-      type: 'text',
-      href: './datenschutz'
-    },
-    {
-      id: 4,
-      label: 'Einstellungen',
-      type: 'text',
-      href: './einstellungen'
-    },
-    {
-      id: 5,
-      label: 'Datenverarbeitug',
-      type: 'text',
-      href: './datenverarbeitung'
-    },
-    {
-      id: 6,
-      label: 'Barrierefreiheit',
-      type: 'text',
-      href: './barrierefreiheit'
-    },
-]
-
-export const socials = [
-    {
-      id: 1,
-      label: 'Facebook',
-      imgSrc: '../src/assets/socials/facebook_logo.svg',
-      href: 'https://facebook.com'
-    },
-    {
-      id: 2,
-      label: 'Instagram',
-      imgSrc: '../src/assets/socials/instagram_logo.svg',
-      href: 'https://instagram.com'
-    },
-    {
-      id: 3,
-      label: 'X',
-      imgSrc: '../src/assets/socials/x_logo.svg',
-      href: 'https://x.com'
-    },
-    {
-      id: 4,
-      label: 'Youtube',
-      imgSrc: '../src/assets/socials/youtube_logo.svg',
-      href: 'https://youtube.com',
-    },
+  export const navbar = [
+      {
+          id : 1,
+          title: 'Philosophie',
+          url: '#Philosophie'
+      },
+      {
+          id: 2,
+          title: 'Service',
+          url: '#Service'
+      },
+      {
+          id: 3,
+          title: 'Projekte',
+          url: '#Projekte'
+      },
+      {
+          id: 4,
+          title: 'Link4',
+          url: '#Link4'
+      }
   ]
+
+  export const legals = [
+      {
+        id: 1,
+        label: 'Kontakt',
+        type: 'text',
+        href: './kontakt'
+      },
+      {
+        id: 2,
+        label: 'Impressum',
+        type: 'text',
+        href: './impressum'
+      },
+      {
+        id: 3,
+        label: 'Datenschutz',
+        type: 'text',
+        href: './datenschutz'
+      },
+      {
+        id: 4,
+        label: 'Einstellungen',
+        type: 'text',
+        href: './einstellungen'
+      },
+      {
+        id: 5,
+        label: 'Datenverarbeitug',
+        type: 'text',
+        href: './datenverarbeitung'
+      },
+      {
+        id: 6,
+        label: 'Barrierefreiheit',
+        type: 'text',
+        href: './barrierefreiheit'
+      },
+  ]
+
+  export const socials = [
+      {
+        id: 1,
+        label: 'Facebook',
+        imgSrc: '../src/assets/socials/facebook_logo.svg',
+        href: 'https://facebook.com'
+      },
+      {
+        id: 2,
+        label: 'Instagram',
+        imgSrc: '../src/assets/socials/instagram_logo.svg',
+        href: 'https://instagram.com'
+      },
+      {
+        id: 3,
+        label: 'X',
+        imgSrc: '../src/assets/socials/x_logo.svg',
+        href: 'https://x.com'
+      },
+      {
+        id: 4,
+        label: 'Youtube',
+        imgSrc: '../src/assets/socials/youtube_logo.svg',
+        href: 'https://youtube.com',
+      },
+    ]
 
   export const hero = {
     header: 'Gemeinsam Wärme schenken: Deine Kleiderspende zählt!',
@@ -118,3 +118,65 @@ export const socials = [
     header: 'Abonniere unseren Newsletter',
     paragraph: 'Verpassen Sie keine Neuigkeiten mehr von Huminata! Unser Newsletter hält Sie stets auf dem Laufenden über unsere aktuellen Projekte, Veranstaltungen und Möglichkeiten, wie Sie sich engagieren können.'
   }
+
+  export const projectsText = {
+    header: 'Unsere Projekte',
+    paragraph: 'Bei Huminata setzen wir uns mit Leidenschaft und Hingabe dafür ein, bedürftigen Menschen zu helfen. Unsere Spendenprojekte sind darauf ausgerichtet, konkrete Unterstützung zu leisten und Lebensqualität zu verbessern.'
+  }
+
+  export const projects = [
+    {
+      id: 1,
+      name: 'Äthiopien',
+      imgProjectSrc: '../src/assets/projects/project_ethiopia.jpeg',
+      imgProjectAlt: 'Spenden in Äthiopien',
+      imgFlagSrc: '../src/assets/flags/flag_ethiopia.png',
+      imgFlagAlt: 'Flagge von Äthiopoien',
+      projectText: 'Die Notlage der durch Konflikte vertriebenen Menschen ist eine große Herausforderung in Äthiopien. Unterstützen Sie diese Familien mit Ihrer Spende.',
+    },
+    {
+      id: 2,
+      name: 'Bolivien',
+      imgProjectSrc: '../src/assets/projects/project_bolivia.png',
+      imgProjectAlt: 'Spenden in Bolivien',
+      imgFlagSrc: '../src/assets/flags/flag_bolivia.png',
+      imgFlagAlt: 'Flagge von Bolivien',
+      projectText: 'Bolivien zählt zu den am stärksten von Armut betroffenen Ländern in Südamerika, und viele Menschen sind auf Spenden angewiesen.',
+    },
+    {
+      id: 3,
+      name: 'Kenia',
+      imgProjectSrc: '../src/assets/projects/project_kenia.jpeg',
+      imgProjectAlt: 'Spenden in Kenia',
+      imgFlagSrc: '../src/assets/flags/flag_kenia.png',
+      imgFlagAlt: 'Flagge von Kenia',
+      projectText: 'Kleiderspenden in Kenia unterstützen bedürftige Familien und helfen, die Auswirkungen von Armut und Arbeitslosigkeit zu lindern.',
+    },
+    {
+      id: 4,
+      name: 'Ukraine',
+      imgProjectSrc: '../src/assets/projects/project_ukraine.png',
+      imgProjectAlt: 'Spenden in Ukraine',
+      imgFlagSrc: '../src/assets/flags/flag_ukraine.png',
+      imgFlagAlt: 'Flagge von Ukraine',
+      projectText: 'Seit 2022 herrscht Krieg in der Ukraine. Unterstützen Sie Familien in den vom Konflikt schwer getroffenen Gebieten und geben Sie den Menschen Hoffnung in dieser schwierigen Zeit.',
+    },
+    {
+      id: 5,
+      name: 'Berlin',
+      imgProjectSrc: '../src/assets/projects/project_berlin.png',
+      imgProjectAlt: 'Spenden in Berlin',
+      imgFlagSrc: '../src/assets/flags/flag_germany.png',
+      imgFlagAlt: 'Flagge von Deutschland',
+      projectText: 'In Berlin-Tegel befindet sich das größte Flüchtlingslager Deutschlands, in dem über 5.000 Menschen auf Unterstützung angewiesen sind.',
+    },
+    {
+      id: 6,
+      name: 'Philippinen',
+      imgProjectSrc: '../src/assets/projects/project_philippines.png',
+      imgProjectAlt: 'Spenden in Philippinen',
+      imgFlagSrc: '../src/assets/flags/flag_philippines.png',
+      imgFlagAlt: 'Flagge von Philippinen',
+      projectText: 'In Berlin-Tegel befindet sich das größte Flüchtlingslager Deutschlands, in dem über 5.000 Menschen auf Unterstützung angewiesen sind.',
+    }
+  ]

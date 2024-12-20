@@ -12,7 +12,7 @@ export default function pageService() {
           >
             <div className="mt-auto flex flex-col items-end justify-end md:flex-row w-full">
               <Link to="./forms/spende" className="#">
-                <button class="
+                <button className="
                   md:w-[150px] w-[120px] bg-white border-2 border-green-600 h-[50px] my-1 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md 
                   hover:scale-105 hover:shadow-lg hover:border-0
                   before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-green-600 before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 
