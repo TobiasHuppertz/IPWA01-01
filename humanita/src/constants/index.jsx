@@ -213,3 +213,82 @@
       blogUrl: '#blog'
     }
   ]  
+
+  export const personFields = [
+    {
+      id: 'firstName',
+      label: 'Vorname',
+      type: 'text',
+      placeholder: '...',
+      errorMessage: 'Bitte geben einen gültigen Vornamen an.'
+    },
+    {
+      id: 'lastName',
+      label: 'Nachname',
+      type: 'text',
+      placeholder: '...',
+      errorMessage: 'Bitte geben einen gültigen Nachnamen an.'
+    },
+    {
+      id: 'email',
+      label: 'E-Mail',
+      type: 'email',
+      placeholder: 'email@test.de',
+      errorMessage: 'Bitte gebe eine gültige E-Mail-Adrese an.'
+    },
+    {
+      id: 'phone',
+      label: 'Telefon',
+      type: 'text',
+      placeholder: '+49...',
+      errorMessage: 'Bitte gebe eine gültige Telefonnummer an.'
+    }
+  ]
+  
+  export const addressFields = [
+    {
+      id: 'street',
+      label: 'Straße',
+      type: 'text',
+      placeholder: '...',
+      errorMessage: 'Bitte gebe eine gültige Straße an.'
+    },
+    {
+      id: 'housenumber',
+      label: 'Hausnummer',
+      type: 'text',
+      placeholder: '...',
+      errorMessage: 'Bitte geben eine gültige Hausnummer an'
+    },
+    {
+      id: 'zipcode',
+      label: 'Postleitzahl',
+      type: 'text',
+      placeholder: '...',
+      errorMessages: {
+        required: 'Bitte gebe eine Postleitzahl an.',
+        length: 'Bitte gültige Postleitzahl eingeben.',
+        pattern: 'Abholung nicht möglich (Außerhalb des Abholgebiets).'
+      }
+    },
+    {
+      id: 'city',
+      label: 'Stadt',
+      type: 'text',
+      placeholder: '...',
+      errorMessage: 'Bitte gebe eine gültige Stadt an.'
+    }
+  ]
+
+  export const addressOptions = [
+    {
+      id: 'adress-option-1',
+      value: 'abholung',
+      label: 'Abholung von zu Hause'
+    },
+    {
+      id: 'adress-option-2',
+      value: 'abgabe',
+      label: 'Abgabe an der Geschäftsstelle'
+    }
+  ]
