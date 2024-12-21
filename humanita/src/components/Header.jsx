@@ -9,6 +9,8 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const isHomePage = location.pathname === "/";
+
   return (
     <nav className="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
@@ -19,7 +21,7 @@ export default function Navbar() {
         <div className="flex md:order-2 space-x-3 md:space-x-0">
           <Link to="./forms/spende">
             <button type="button"
-              className="text-white font-SourceSans bg-green-600 hover:bg-green-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              className={`text-white bg-green-600 hover:bg-green-800 font-medium rounded-lg text-sm px-4 py-2 text-center ${!isHomePage ? 'invisible' : ''}`}> 
               Spenden
             </button>
           </Link>
