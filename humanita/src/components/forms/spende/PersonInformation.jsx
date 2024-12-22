@@ -17,7 +17,7 @@ export default function pagePersonInformation() {
       personFields,
       addressFields,
     };
-    navigate("/confirm", { state: combinedData });
+    navigate("./DonationItems", { state: combinedData });
   });
 
   useEffect(() => {

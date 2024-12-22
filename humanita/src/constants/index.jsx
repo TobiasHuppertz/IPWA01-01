@@ -292,3 +292,60 @@
       label: 'Abgabe an der Geschäftsstelle'
     }
   ]
+
+  export const donation_items = [
+    {
+      id: 1,
+      name: 'Pullover',
+      imageSrc: '../../../src/assets/donations/pullover.png',
+      imageAlt: 'Bild eines Pullovers',
+    },
+    {
+      id: 2,
+      name: 'T-Shirt',
+      imageSrc: '../../../src/assets/donations/tshirt.png',
+      imageAlt: 'Bild eines T-Shirts',
+    },
+    {
+      id: 3,
+      name: 'Mantel oder Jacke',
+      imageSrc: '../../../src/assets/donations/coat.png',
+      imageAlt: 'Bild eines Mantels',
+    },
+    {
+      id: 4,
+      name: 'Schuhe',
+      imageSrc: '../../../src/assets/donations/shoes.png',
+      imageAlt: 'Bild eines Schuhs',
+    },
+    {
+      id: 5,
+      name: 'Accessoires',
+      imageSrc: '../../../src/assets/donations/accessories.png',
+      imageAlt: 'Bild mit Handschuhe, Schal und Mütze',
+    },
+    {
+      id: 6,
+      name: 'Jeans',
+      imageSrc: '../../../src/assets/donations/jeans.png',
+      imageAlt: 'Bild von Jeans',
+    },
+    {
+      id: 7,
+      name: 'Sportkleidung',
+      imageSrc: '../../../src/assets/donations/sportswear.png',
+      imageAlt: 'Bild von Sportkleidung',
+    },
+    {
+      id: 8,
+      name: 'Kinderkleidung',
+      imageSrc: '../../../src/assets/donations/kidsclothes.png',
+      imageAlt: 'Bild von Kinderkleidung',
+    },
+    {
+      id: 9,
+      name: 'Babykleidung',
+      imageSrc: '../../../src/assets/donations/babyclothes.png',
+      imageAlt: 'Bild von Babykleidung',
+    }
+  ]
