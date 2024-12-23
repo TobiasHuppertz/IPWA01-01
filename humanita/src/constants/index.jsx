@@ -1,3 +1,46 @@
+  import {
+    img_logo,
+    img_hero,
+    facebook_logo,
+    instagram_logo,
+    x_logo,
+    youtube_logo,
+    philosophy_1,
+    philosophy_2,
+    office,
+    pickup,
+    warehouse,
+    project_berlin,
+    project_bolivia,
+    project_ethiopia,
+    project_kenia,
+    project_philippines,
+    project_ukraine,
+    flag_bolivia,
+    flag_ethiopia,
+    flag_germany,
+    flag_kenia,
+    flag_philippines,
+    flag_ukraine,
+    blog_bolivia,
+    blog_philippines,
+    blog_ukraine,
+    accessories,
+    babyclothes,
+    coat,
+    jeans,
+    kidsclothes,
+    pullover,
+    shoes,
+    sportswear,
+    tshirt
+  } from "../assets"
+  
+  export const header = {
+    imgSrc: img_logo,
+    imgAlt: 'Logo von Humanita (Herz mit Wollnadel)'
+  }
+
   export const navbar = [
       {
           id : 1,
@@ -64,25 +107,25 @@
       {
         id: 1,
         label: 'Facebook',
-        imgSrc: '../src/assets/socials/facebook_logo.svg',
+        imgSrc: facebook_logo,
         href: 'https://facebook.com'
       },
       {
         id: 2,
         label: 'Instagram',
-        imgSrc: '../src/assets/socials/instagram_logo.svg',
+        imgSrc: instagram_logo,
         href: 'https://instagram.com'
       },
       {
         id: 3,
         label: 'X',
-        imgSrc: '../src/assets/socials/x_logo.svg',
+        imgSrc: x_logo,
         href: 'https://x.com'
       },
       {
         id: 4,
         label: 'Youtube',
-        imgSrc: '../src/assets/socials/youtube_logo.svg',
+        imgSrc: youtube_logo,
         href: 'https://youtube.com',
       },
     ]
@@ -90,27 +133,27 @@
   export const hero = {
     header: 'Gemeinsam Wärme schenken: Deine Kleiderspende zählt!',
     text: 'In unseren Schränken schlummern ungenutzte Schätze. Mit deiner Kleiderspende an Huminata hilfst du Bedürftigen. Jede Jacke, jedes Paar Schuhe und jeder Pullover bringt Wärme, Freude und Hoffnung. Gemeinsam machen wir den Unterschied.',
-    bgSrc: '../src/assets/hero.jpeg'
+    bgSrc: img_hero
   }
 
   export const philosophy = {
     header: 'Helfen ist unsere Herzensangelegenheit',
     paragraph1: 'Humanita ist mehr als nur eine Organisation, die Kleidung sammelt und verteilt. Unsere Philosophie basiert auf der Überzeugung, dass jede gespendete Kleidung ein Zeichen der Menschlichkeit und Solidarität ist. Wir glauben daran, dass wir gemeinsam eine Gemeinschaft schaffen können, in der niemand ohne die Grundbedürfnisse des Lebens auskommen muss.',
     paragraph2: 'Bei Humanita geht es nicht nur um die physische Unterstützung durch Kleidung, sondern auch um das Vermitteln von Hoffnung und Würde. Wir sind der festen Überzeugung, dass jeder Mensch das Recht auf ein würdevolles Leben hat, unabhängig von seiner finanziellen Lage. Kleidung ist dabei ein Mittel, um nicht nur Wärme und Schutz zu bieten, sondern auch ein Gefühl der Zugehörigkeit und Wertschätzung.',
-    img1Scr: '../src/assets/philosophy/philosophy_1.jpeg',
+    img1Scr: philosophy_1,
     img1Alt: 'Helfende stehen umarmend im Kreis, Perspektive von unten',
-    img2Scr: '../src/assets/philosophy/philosophy_2.jpeg',
+    img2Scr: philosophy_2,
     img2Alt: 'Helferin steht am Tisch und sortiert Kleidung'
   }
 
   export const service = {
     header: 'Bequeme Kleiderspende bei Huminata: Einfach und flexibel',
     paragraph: 'Bei Huminata machen wir das Spenden deiner Kleidungsstücke so einfach wie möglich. Wir bieten dir die Möglichkeit, deine Spenden bequem von zu Hause abholen zu lassen. Unser Transporter kommt direkt zu dir und nimmt die Kleidung entgegen. Alternativ kannst du deine Spenden auch persönlich an unserer Geschäftsstelle abgeben. Gemeinsam machen wir es unkompliziert, Wärme und Freude zu schenken.',
-    imgBigSrc: '../src/assets/service/warehouse.jpeg',
+    imgBigSrc: warehouse,
     imgBigAlt: 'Lagerhalle, in der Kartons mit Kleidern stehen',
-    imgService1Src: '../src/assets/service/pickup.jpeg',
+    imgService1Src: pickup,
     imgService1Alt: 'Helfer räumt Kleiderspenden in einen Transporter.',
-    imgService2Src: '../src/assets/service/office.jpeg',
+    imgService2Src: office,
     imgService2Alt: 'Eingang einer Lagerhalle mit Büro'
   }
   
@@ -128,54 +171,54 @@
     {
       id: 1,
       name: 'Äthiopien',
-      imgProjectSrc: '../src/assets/projects/project_ethiopia.jpeg',
+      imgProjectSrc: project_ethiopia,
       imgProjectAlt: 'Spenden in Äthiopien',
-      imgFlagSrc: '../src/assets/flags/flag_ethiopia.png',
+      imgFlagSrc: flag_ethiopia,
       imgFlagAlt: 'Flagge von Äthiopoien',
       projectText: 'Die Notlage der durch Konflikte vertriebenen Menschen ist eine große Herausforderung in Äthiopien. Unterstützen Sie diese Familien mit Ihrer Spende.',
     },
     {
       id: 2,
       name: 'Bolivien',
-      imgProjectSrc: '../src/assets/projects/project_bolivia.png',
+      imgProjectSrc: project_bolivia,
       imgProjectAlt: 'Spenden in Bolivien',
-      imgFlagSrc: '../src/assets/flags/flag_bolivia.png',
+      imgFlagSrc: flag_bolivia,
       imgFlagAlt: 'Flagge von Bolivien',
       projectText: 'Bolivien zählt zu den am stärksten von Armut betroffenen Ländern in Südamerika, und viele Menschen sind auf Spenden angewiesen.',
     },
     {
       id: 3,
       name: 'Kenia',
-      imgProjectSrc: '../src/assets/projects/project_kenia.jpeg',
+      imgProjectSrc: project_kenia,
       imgProjectAlt: 'Spenden in Kenia',
-      imgFlagSrc: '../src/assets/flags/flag_kenia.png',
+      imgFlagSrc: flag_kenia,
       imgFlagAlt: 'Flagge von Kenia',
       projectText: 'Kleiderspenden in Kenia unterstützen bedürftige Familien und helfen, die Auswirkungen von Armut und Arbeitslosigkeit zu lindern.',
     },
     {
       id: 4,
       name: 'Ukraine',
-      imgProjectSrc: '../src/assets/projects/project_ukraine.png',
+      imgProjectSrc: project_ukraine,
       imgProjectAlt: 'Spenden in Ukraine',
-      imgFlagSrc: '../src/assets/flags/flag_ukraine.png',
+      imgFlagSrc: flag_ukraine,
       imgFlagAlt: 'Flagge von Ukraine',
       projectText: 'Seit 2022 herrscht Krieg in der Ukraine. Unterstützen Sie Familien in den vom Konflikt schwer getroffenen Gebieten und geben Sie den Menschen Hoffnung in dieser schwierigen Zeit.',
     },
     {
       id: 5,
       name: 'Berlin',
-      imgProjectSrc: '../src/assets/projects/project_berlin.png',
+      imgProjectSrc: project_berlin,
       imgProjectAlt: 'Spenden in Berlin',
-      imgFlagSrc: '../src/assets/flags/flag_germany.png',
+      imgFlagSrc: flag_germany,
       imgFlagAlt: 'Flagge von Deutschland',
       projectText: 'In Berlin-Tegel befindet sich das größte Flüchtlingslager Deutschlands, in dem über 5.000 Menschen auf Unterstützung angewiesen sind.',
     },
     {
       id: 6,
       name: 'Philippinen',
-      imgProjectSrc: '../src/assets/projects/project_philippines.png',
+      imgProjectSrc: project_philippines,
       imgProjectAlt: 'Spenden in Philippinen',
-      imgFlagSrc: '../src/assets/flags/flag_philippines.png',
+      imgFlagSrc: flag_philippines,
       imgFlagAlt: 'Flagge von Philippinen',
       projectText: 'In Berlin-Tegel befindet sich das größte Flüchtlingslager Deutschlands, in dem über 5.000 Menschen auf Unterstützung angewiesen sind.',
     }
@@ -186,7 +229,7 @@
       id: 1,
       name: 'Lieferung nach Odessa',
       date: '11 Feb. 2024',
-      imgSrc: '../src/assets/blog/blog_ukraine.jpeg',
+      imgSrc: blog_ukraine,
       imgAlt: 'Freiwillige Helfer arbeiten in einer Lagerhalle in der Ukraine.',
       blogHeader: 'Unterstützung in Odessa: Huminata im Einsatz',
       blogText: 'Derzeit sind wir direkt in Odessa vor Ort und leisten dringend benötigte Hilfe und Unterstützung für die örtliche Gemeinschaft.',
@@ -196,7 +239,7 @@
       id: 2,
       name: 'Projekt in Philippinen',
       date: '23 Mai 2024',
-      imgSrc: '../src/assets/blog/blog_philippines.jpeg',
+      imgSrc: blog_philippines,
       imgAlt: 'Zerstörtes Dorf auf den Philippinen',
       blogHeader: 'Hilfe auf den Philippinen: Zusammen stark in der Inselwelt',
       blogText: 'Auf den Philippinen arbeiten wir eng mit lokalen Organisationen zusammen, um bedürftigen Gemeinschaften umfassend zu helfen. Unsere Projekte erstrecken sich über mehrere Inseln und erreichen Menschen in abgelegenen Gebieten, die oft vergessen werden.',
@@ -206,7 +249,7 @@
       id: 3,
       name: 'Projekt in Bolivien',
       date: '5 Nov. 2024',
-      imgSrc: '../src/assets/blog/blog_bolivia.jpeg',
+      imgSrc: blog_bolivia,
       imgAlt: 'Traditionelles Dorf in den Anden',
       blogHeader: 'Bolivien: Gemeinsam für eine bessere Zukunft',
       blogText: 'Besonders in den kalten Wintermonaten ist warme Kleidung von unschätzbarem Wert. In Bolivien haben wir bei Huminata eine bedeutende Partnerschaft mit lokalen Gemeinden in den Anden aufgebaut.',
@@ -297,55 +340,55 @@
     {
       id: 1,
       name: 'Pullover',
-      imgSrc: '../../../src/assets/donations/pullover.png',
+      imgSrc: pullover,
       imgAlt: 'Bild eines Pullovers',
     },
     {
       id: 2,
       name: 'T-Shirt',
-      imgSrc: '../../../src/assets/donations/tshirt.png',
+      imgSrc: tshirt,
       imgAlt: 'Bild eines T-Shirts',
     },
     {
       id: 3,
       name: 'Mantel oder Jacke',
-      imgSrc: '../../../src/assets/donations/coat.png',
+      imgSrc: coat,
       imgAlt: 'Bild eines Mantels',
     },
     {
       id: 4,
       name: 'Schuhe',
-      imgSrc: '../../../src/assets/donations/shoes.png',
+      imgSrc: shoes,
       imgAlt: 'Bild eines Schuhs',
     },
     {
       id: 5,
       name: 'Accessoires',
-      imgSrc: '../../../src/assets/donations/accessories.png',
+      imgSrc: accessories,
       imgAlt: 'Bild mit Handschuhe, Schal und Mütze',
     },
     {
       id: 6,
       name: 'Jeans',
-      imgSrc: '../../../src/assets/donations/jeans.png',
+      imgSrc: jeans,
       imgAlt: 'Bild von Jeans',
     },
     {
       id: 7,
       name: 'Sportkleidung',
-      imgSrc: '../../../src/assets/donations/sportswear.png',
+      imgSrc: sportswear,
       imgAlt: 'Bild von Sportkleidung',
     },
     {
       id: 8,
       name: 'Kinderkleidung',
-      imgSrc: '../../../src/assets/donations/kidsclothes.png',
+      imgSrc: kidsclothes,
       imgAlt: 'Bild von Kinderkleidung',
     },
     {
       id: 9,
       name: 'Babykleidung',
-      imgSrc: '../../../src/assets/donations/babyclothes.png',
+      imgSrc: babyclothes,
       imgAlt: 'Bild von Babykleidung',
     }
   ]
