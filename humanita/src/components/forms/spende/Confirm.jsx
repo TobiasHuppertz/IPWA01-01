@@ -94,7 +94,7 @@ export default function PageConfirm() {
         </section>
 
         <div className="flex justify-between w-full mt-4">
-          <Link to="/spende/country" state={state}>
+          <Link to="../DonationProject" state={state}>
             <button className="text-white bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
               Back
             </button>
