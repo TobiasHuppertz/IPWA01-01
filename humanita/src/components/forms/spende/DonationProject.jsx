@@ -14,9 +14,9 @@ export default function PageDonationProject() {
   }, [state, reset]);
 
   const onSubmit = handleSubmit((data) => {
-    navigate("../Confirm", { state: { ...data } });
+    navigate("../Confirm", { state: { ...state, ...data } });
   });
-
+  
   return (
     <form onSubmit={onSubmit} className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl pb-2 bg-white m-4 p-4">
       <h3 className="mb-4 text-lg font-medium leading-none text-gray-900">

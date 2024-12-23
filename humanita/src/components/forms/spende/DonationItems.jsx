@@ -21,23 +21,19 @@ export default function PageDonationItems() {
   }, [state, setValue]);
 
   const onSubmit = handleSubmit((data) => {
-    const itemsWithQuantity = donation_items.map(product => ({
+    const itemsWithQuantity = donation_items.map((product) => ({
       ...product,
-      quantity: data[`quantity-${product.id}`]
+      quantity: data[`quantity-${product.id}`],
     }));
-
-    console.log('donation_items:', itemsWithQuantity);
-    console.log('formFields:', state);
-
-    navigate("../DonationProject", { 
-      state: { 
+  
+    navigate("../DonationProject", {
+      state: {
+        ...state,
         donation_items: itemsWithQuantity,
-        formFields: state
-      } 
+      },
     });
-    console.log('donation_items:', itemsWithQuantity);
-    console.log('formFields:', state);
   });
+  
 
   return (
     <form onSubmit={onSubmit} className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl pb-2 bg-white m-4 p-4">

@@ -13,12 +13,12 @@ export default function PagePersonInformation() {
 
   const onSubmit = handleSubmit((data) => {
     const combinedData = {
+      ...state,
       ...data,
-      personFields,
-      addressFields,
     };
     navigate("./DonationItems", { state: combinedData });
   });
+  
 
   useEffect(() => {
     reset(state);

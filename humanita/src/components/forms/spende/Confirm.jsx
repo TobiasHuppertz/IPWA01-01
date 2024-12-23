@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function PageConfirm() { 
   const { state } = useLocation();
-  const [formFields, setFormFields] = useState(state?.formFields || {});
+  const [formFields, setFormFields] = useState(state || {});
   const [textAbgabe, setTextAbgabe] = useState(""); 
   const country = state?.country;
   const donation_items = state?.donation_items || [];
