@@ -45,17 +45,17 @@ export default function PageConfirm() {
               <dl>
                 <dt className="block font-normal text-gray-500">Name</dt>
                 <dd className="font-medium text-gray-900 ">{formFields?.firstName} {formFields?.lastName}</dd>
-                <hr class="mt-2 border-gray-300"/>
+                <hr className="mt-2 border-gray-300"/>
               </dl>
               <dl>
                 <dt className="block font-normal text-gray-500">E-Mail</dt>
                 <dd className="mt-1 font-medium text-gray-900">{formFields?.email}</dd>
-                <hr class="mt-2 border-gray-300"/>
+                <hr className="mt-2 border-gray-300"/>
               </dl>
               <dl>
                 <dt className="block font-normal text-gray-500">Telefonnummer</dt>
                 <dd className="mt-1 font-medium text-gray-900">{formFields?.phone}</dd>
-                <hr class="mt-2 border-gray-300"/>
+                <hr className="mt-2 border-gray-300"/>
               </dl>
             </div>
             <h3 className="text-sm font-medium text-gray-900 sm:text-base mb-1">Spende</h3>
@@ -67,12 +67,12 @@ export default function PageConfirm() {
                     <dd className="block font-medium text-gray-900">{item.quantity}</dd>
                   </div>
                 ))}
-                <hr class="mt-2 border-gray-300"/>
+                <hr className="mt-2 border-gray-300"/>
               </dl>
               <dl>
                 <dt className="block font-normal text-gray-500">Empfängerland</dt>
                 <dd className="mt-1 font-medium text-gray-900">{country}</dd>
-                <hr class="mt-2 border-gray-300"/>
+                <hr className="mt-2 border-gray-300"/>
               </dl>
             </div>
             <h3 className="text-sm font-medium text-gray-900 sm:text-base mb-1">Adressdaten</h3>
@@ -87,7 +87,7 @@ export default function PageConfirm() {
               <dl>
                 <dt className="block font-normal text-gray-500">Spendendatum</dt>
                 <dd className="mt-1 font-medium text-gray-900">{modifiedDate} um {modifiedTime} Uhr</dd>
-                <hr class="mt-2 border-gray-300"/>
+                <hr className="mt-2 border-gray-300"/>
               </dl>
             </div>
           </div>

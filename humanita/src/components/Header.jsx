@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { navbar } from '../constants';
+
+import { navbar, header } from '../constants';
+
 
 export default function Navbar() {
 
@@ -15,7 +17,7 @@ export default function Navbar() {
     <nav className="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="../" className="flex items-center space-x-3">
-          <img src="../src/assets/humanita_logo.svg" alt="Logo Humanita" className="h-10" />
+          <img src={header.imgSrc} alt={header.imgAlt} className="h-10" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap">Humanita</span>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0">

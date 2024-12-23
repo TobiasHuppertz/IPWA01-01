@@ -1,5 +1,4 @@
-import { legals } from "../constants"
-import { socials } from "../constants"
+import { legals, socials } from "../constants"
 
 export default function Footer() {
   return (

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { projectsText } from '../constants';
-import { projects } from '../constants';
+
+import { projectsText, projects } from '../constants';
+
 
 export default function PageProjects() {
   return (
