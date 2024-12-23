@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { projectsText } from '../constants';
 import { projects } from '../constants';
 
-export default function pageProjects() {
+export default function PageProjects() {
   return (
     <section className="p-4 py-20">
         <div className="text-center">

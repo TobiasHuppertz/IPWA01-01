@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-export default function pageConfirm() {
+export default function PageConfirm() {
   const { state } = useLocation();
 
   return (

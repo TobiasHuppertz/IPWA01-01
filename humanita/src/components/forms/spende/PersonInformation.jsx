@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 import { personFields, addressFields, addressOptions } from '../../../constants';
 
-export default function pagePersonInformation() {
+export default function PagePersonInformation() {
 
   const navigate = useNavigate();
   const { state } = useLocation();

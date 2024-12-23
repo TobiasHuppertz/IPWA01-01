@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { service } from '../constants';
 
-export default function pageService() {
+export default function PageService() {
   return (
     <section className="p-4 py-20">
         <div className="flex flex-col lg:flex-row gap-4">

@@ -9,6 +9,7 @@ import DonationFormKiosk from './DonationFormKiosk.jsx';
 
 import PersonInformation from './components/forms/spende/PersonInformation.jsx';
 import DonationItems from './components/forms/spende/DonationItems.jsx';
+import DonationProject from './components/forms/spende/DonationProject.jsx'
 import Confirm from './components/forms/spende/Confirm.jsx';
 
 
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/forms/spende" element={<DonationForm />}>
               <Route index element={<PersonInformation />} />
               <Route path="DonationItems" element={<DonationItems />} />
+              <Route path="DonationProject" element={<DonationProject />} />
               <Route path="Confirm" element={<Confirm />} />
             </Route>
             <Route path="/forms/spende/kiosk" element={<DonationFormKiosk />}>
