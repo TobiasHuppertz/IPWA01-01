@@ -11,15 +11,10 @@ export default function PagePersonInformation() {
   const { register, reset, setValue, watch, handleSubmit } = useForm();
   const watchAbgabe = watch("abgabe");
 
-  const onSubmit = handleSubmit((data) => {
-    const combinedData = {
-      ...state,
-      ...data,
-    };
-    navigate("./DonationItems", { state: combinedData });
+  const onSubmit = handleSubmit((data) => { 
+    navigate("./DonationItems", { state: data }); 
   });
   
-
   useEffect(() => {
     reset(state);
   }, [reset, state]);

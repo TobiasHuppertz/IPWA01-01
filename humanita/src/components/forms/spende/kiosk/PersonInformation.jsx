@@ -10,12 +10,8 @@ export default function PagePersonInformation() {
   const { state } = useLocation();
   const { register, reset, handleSubmit } = useForm();
 
-  const onSubmit = handleSubmit((data) => {
-    const combinedData = {
-      ...state,
-      ...data,
-    };
-    navigate("./DonationItems", { state: combinedData });
+  const onSubmit = handleSubmit((data) => { 
+    navigate("./DonationItems", { state: data }); 
   });
   
   useEffect(() => {
