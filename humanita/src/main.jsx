@@ -17,6 +17,7 @@ import PersonInformationKiosk from './components/forms/spende/kiosk/PersonInform
 import DonationItemsKiosk from './components/forms/spende/kiosk/DonationItems.jsx';
 import DonationProjectKiosk from './components/forms/spende/kiosk/DonationProject.jsx'
 import ConfirmKiosk from './components/forms/spende/kiosk/Confirm.jsx'
+import Submit from './components/forms/spende/kiosk/Submit.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -35,6 +36,7 @@ createRoot(document.getElementById('root')).render(
               <Route path="DonationItems" element={<DonationItemsKiosk />} />
               <Route path="DonationProject" element={<DonationProjectKiosk />} />
               <Route path="Confirm" element={<ConfirmKiosk />} />
+              <Route path="Submit" element={<Submit />} />
             </Route>
           </Routes>
       </BrowserRouter>
