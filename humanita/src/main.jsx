@@ -13,8 +13,11 @@ import DonationProject from './components/forms/spende/DonationProject.jsx'
 import Confirm from './components/forms/spende/Confirm.jsx';
 
 
-import Step1Kiosk from './components/forms/spende/kiosk/Step1.jsx';
-import Step2Kiosk from './components/forms/spende/kiosk/Step2.jsx';
+import PersonInformationKiosk from './components/forms/spende/kiosk/PersonInformation.jsx';
+import DonationItemsKiosk from './components/forms/spende/kiosk/DonationItems.jsx';
+import DonationProjectKiosk from './components/forms/spende/kiosk/DonationProject.jsx'
+import ConfirmKiosk from './components/forms/spende/kiosk/Confirm.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -28,8 +31,10 @@ createRoot(document.getElementById('root')).render(
               <Route path="Confirm" element={<Confirm />} />
             </Route>
             <Route path="/forms/spende/kiosk" element={<DonationFormKiosk />}>
-              <Route index element={<Step1Kiosk />} />
-              <Route path="step2" element={<Step2Kiosk />} />
+              <Route index element={<PersonInformationKiosk />} />
+              <Route path="DonationItems" element={<DonationItemsKiosk />} />
+              <Route path="DonationProject" element={<DonationProjectKiosk />} />
+              <Route path="Confirm" element={<ConfirmKiosk />} />
             </Route>
           </Routes>
       </BrowserRouter>
