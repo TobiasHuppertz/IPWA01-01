@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 
 export default function PageConfirm() { 
   const { state } = useLocation();
-  const [formFields, setFormFields] = useState(state || {});
+  const [formFields, setFormFields] = useState({
+    ...state,
+    abgabe: true
+  });
   const [textAbgabe, setTextAbgabe] = useState(""); 
   const country = state?.country;
   const donation_items = state?.donation_items || [];
@@ -17,25 +20,22 @@ export default function PageConfirm() {
 
   // Funktion zum Zurücksetzen der Adressfelder
   const resetAddressFields = () => {
-    if (formFields.abgabe) {
-      setFormFields((prev) => ({
-        ...prev,
-        street: "Musterstraße",
-        housenumber: "35",
-        zipcode: "55118",
-        city: "Mainz",
-      }));
-      setTextAbgabe("Die Spende wird in der Geschäftsstelle abgegeben.");
-    } else {
-      setTextAbgabe("Die Spende wird abgeholt.");
-    }
+    setFormFields((prev) => ({
+      ...prev,
+      abgabe: true,
+      street: "Musterstraße",
+      housenumber: "35",
+      zipcode: "55118",
+      city: "Mainz",
+    }));
+    setTextAbgabe("Die Spende wird in der Geschäftsstelle abgegeben.");
   };
 
   useEffect(() => {
     resetAddressFields();
   }, [formFields.abgabe]);
 
-  return (
+ return (
       <form className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl pb-2 bg-white m-4 p-4">
         <section className="bg-white py-8 antialiased md:py-8">
           <div className="mx-auto max-w-2xl px-4 2xl:px-0">
@@ -93,7 +93,7 @@ export default function PageConfirm() {
           </div>
         </section>
 
-        <div className="flex justify-between w-full mt-4">
+        <div className="flex justify-between w-full mt-8">
           <Link to="../DonationProject" state={state}>
             <button className="text-white bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
               Back
