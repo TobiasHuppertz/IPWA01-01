@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const NumberIndicator = ({ id, register, setValue }) => {
+export default function NumberIndicator({ id, register, setValue }) {
   const [value, setValueState] = useState(0);
 
   const increment = () => setValueState(prevValue => prevValue + 1);
@@ -27,6 +27,5 @@ const NumberIndicator = ({ id, register, setValue }) => {
       </div>
     </div>
   );
-};
+}
 
-export default NumberIndicator;

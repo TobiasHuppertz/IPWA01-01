@@ -5,8 +5,9 @@ import { donation_items } from '../../../../constants';
 import NumberIndicator from '../../../../components/NumberIndicator';
 
 export default function PageDonationItems() {
-  const { state } = useLocation();
+  
   const navigate = useNavigate();
+  const { state } = useLocation();
   const { register, handleSubmit, setValue } = useForm({
     defaultValues: state,
   });
@@ -54,7 +55,7 @@ export default function PageDonationItems() {
           </div>
         </li>
       </ol>
-      <h3 className="mb-4 text-lg font-medium leading-none text-gray-900">Persönliche Informationen</h3>
+      <h3 className="mb-4 text-lg font-medium leading-none text-gray-900">Was wird gespendet:</h3>
       <div className="grid gap-4 mb-4 justify-center lg:grid-cols-3 sm:grid-cols-2">
         {donation_items.map((item) => (
           <div key={item.id} className="max-w-xs bg-white border border-gray-200 rounded-lg shadow">

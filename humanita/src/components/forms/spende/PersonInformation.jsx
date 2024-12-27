@@ -15,9 +15,9 @@ export default function PagePersonInformation() {
     navigate("./DonationItems", { state: data }); 
   });
   
-  useEffect(() => {
-    reset(state);
-  }, [reset, state]);
+    useEffect(() => {
+      reset(state);
+    }, [reset, state]);
 
   const handleAddressChange = (event) => {
     if (event.target.value === 'abgabe') {

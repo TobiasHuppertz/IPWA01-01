@@ -5,8 +5,8 @@ export default function PageConfirm() {
   const { state } = useLocation();
   const [formFields, setFormFields] = useState(state || {});
   const [textAbgabe, setTextAbgabe] = useState(""); 
-  const country = state?.country;
-  const donation_items = state?.donation_items || [];
+  const country = state.country;
+  const donation_items = state.donation_items || [];
   const filteredItems = donation_items.filter((item) => item.quantity > 0);
 
   // Datum erzeugen und formatieren
@@ -33,6 +33,7 @@ export default function PageConfirm() {
 
   useEffect(() => {
     resetAddressFields();
+    console.log("Aktuelle formFields:", formFields);
   }, [formFields.abgabe]);
 
   return (

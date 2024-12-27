@@ -5,8 +5,9 @@ import { useEffect } from "react";
 import { projects } from '../../../constants';
 
 export default function PageDonationProject() {
-  const { state } = useLocation();
+  
   const navigate = useNavigate();
+  const { state } = useLocation();
   const { register, handleSubmit, reset } = useForm();
 
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function PageDonationProject() {
   }, [state, reset]);
 
   const onSubmit = handleSubmit((data) => {
-    navigate("../Confirm", { state: { ...state, ...data } });
+    navigate("../Confirm", { state: data }); 
   });
   
   return (
