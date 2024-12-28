@@ -4,18 +4,16 @@ import { useEffect, useState } from "react";
 export default function PageConfirm() { 
   const { state } = useLocation();
   const [formFields, setFormFields] = useState(state || {});
-  const [textAbgabe, setTextAbgabe] = useState(""); 
+  const [textAbgabe , setTextAbgabe] = useState(""); 
   const country = state.country;
   const donation_items = state.donation_items || [];
   const filteredItems = donation_items.filter((item) => item.quantity > 0);
 
-  // Datum erzeugen und formatieren
   const date = new Date();
   const modifiedDate = date.toLocaleDateString('de-DE');
   const optionTime =  { hour: '2-digit', minute: '2-digit' };
   const modifiedTime = date.toLocaleTimeString('de-DE', optionTime); 
 
-  // Funktion zum Zurücksetzen der Adressfelder
   const resetAddressFields = () => {
     if (formFields.abgabe) {
       setFormFields((prev) => ({
@@ -33,7 +31,6 @@ export default function PageConfirm() {
 
   useEffect(() => {
     resetAddressFields();
-    console.log("Aktuelle formFields:", formFields);
   }, [formFields.abgabe]);
 
   return (

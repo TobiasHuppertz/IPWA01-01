@@ -8,7 +8,7 @@ export default function PagePersonInformation() {
 
   const navigate = useNavigate();
   const { state } = useLocation();
-  const { register, reset, setValue, watch, handleSubmit } = useForm();
+  const { register, reset, formState: { errors }, setValue, watch, handleSubmit } = useForm();
   const watchAbgabe = watch("abgabe");
 
   const onSubmit = handleSubmit((data) => { 
@@ -63,6 +63,9 @@ export default function PagePersonInformation() {
                 className="bg-gray-50 border border-gray-300 max-w-md text-gray-900 text-sm rounded-lg block w-full p-2.5"
                 placeholder={field.placeholder}
               />
+              {errors[field.id] && errors[field.id].type === "required" && (
+                <p className="text-red-500 before:inline before:content-['⚠_']">{field.errorMessage}</p>
+              )}
             </div>
           ))}
         </div>
@@ -85,6 +88,11 @@ export default function PagePersonInformation() {
                   {option.label}
                 </label>
               </div>
+              {errors.address && (
+                <p className="text-red-500 before:inline before:content-['⚠_']">
+                  {errors.address.message}
+                </p>
+              )}
             </div>
           ))}
           {addressFields.map((field) => (
@@ -104,6 +112,25 @@ export default function PagePersonInformation() {
                 className="bg-gray-50 border border-gray-300 max-w-md text-gray-900 text-sm rounded-lg disabled:bg-gray-200 block w-full p-2.5"
                 placeholder={field.placeholder}
               />
+              {errors[field.id] && (
+                  <>
+                    {errors[field.id].type === 'required' && (
+                      <p className="text-red-500 before:inline before:content-['⚠_']">
+                        {field.errorMessages ? field.errorMessages.required : field.errorMessage}
+                      </p>
+                    )}
+                    {(errors[field.id].type === 'maxLength' || errors[field.id].type === 'minLength') && field.errorMessages && (
+                      <p className="text-red-500 before:inline before:content-['⚠_']">
+                        {field.errorMessages.length}
+                      </p>
+                    )}
+                    {errors[field.id].type === 'pattern' && field.errorMessages && (
+                      <p className="text-red-500 before:inline before:content-['⚠_']">
+                        {field.errorMessages.pattern}
+                      </p>
+                    )}
+                  </>
+                )}
             </div>
           ))}
         </div>
