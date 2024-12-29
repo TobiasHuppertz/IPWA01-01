@@ -79,7 +79,7 @@ export default function PageConfirm() {
                 <dd className="py-2 mt-1 font-medium text-gray-900">{textAbgabe}</dd>
                 <dt className="block font-normal text-gray-500">Adresse</dt>
                 <dd className="mt-1 font-medium text-gray-900">{formFields?.street} {formFields?.housenumber}</dd>
-                <dd className="mt-1 font-medium text-gray-900">{formFields?.zipcode} , {formFields?.city}</dd>
+                <dd className="mt-1 font-medium text-gray-900">{formFields?.zipcode}, {formFields?.city}</dd>
                 <hr className="mt-2 border-gray-300"/>
               </dl>
               <dl>

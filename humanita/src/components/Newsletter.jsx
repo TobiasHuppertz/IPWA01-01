@@ -4,7 +4,7 @@ export default function PageNewsletter() {
     return (
       <div className="relative isolate overflow-hidden bg-teal-50 py-16 px-6 lg:px-8 sm:py-24 lg:py-32 flex justify-center items-center">
         <div className="max-w-lg lg:max-w-xl">
-            <h2 className="font-Merriweather text-xl lg:text-3xl text-center font-semibold tracking-tight">
+            <h2 className="font-Merriweather text-xl md:text-3xl text-center font-semibold tracking-tight">
                 {newsletter.header}
             </h2>
             <p className="mt-4 px-6 text-sm text-center lg:text-base text-pretty text-gray-600">

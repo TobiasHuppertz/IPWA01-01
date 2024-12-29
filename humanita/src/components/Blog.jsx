@@ -3,7 +3,7 @@ import { blog } from "../constants"
 export default function Blog() {
   return (
     <section className="p-4 py-20">
-      <h2 className="font-Merriweather text-4xl font-bold text-gray-900 text-center mb-16">
+      <h2 className="font-Merriweather text-2xl md:text-4xl font-bold text-gray-900 text-center tracking-tight mb-16">
         Aktuelles
       </h2>
       <div className="flex justify-center gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
@@ -16,7 +16,7 @@ export default function Blog() {
                   <span className="text-green-600 font-medium mb-3 block">{item.date}</span>
                   <h4 className="font-Merriweather text-lg text-gray-900 text-pretty font-medium mb-5">{item.blogHeader}</h4>
                   <p className="font-SourceSans text-gray-500 line-clamp-3 leading-6 mb-10">{item.blogText}</p>
-                  <a href={item.blogUrl} className="cursor-pointer text-lg text-green-600 font-semibold">
+                  <a href={item.blogUrl} className="cursor-pointer md:text-lg text-green-600 font-semibold">
                     Weiterlesen..
                   </a>
               </div>

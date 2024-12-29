@@ -7,10 +7,10 @@ export default function PageProjects() {
   return (
     <section className="p-4 py-20">
         <div className="text-center">
-          <h1 className="text-balance text-3xl font-Merriweather font-semibold tracking-tight sm:text-5xl">
+          <h1 className="font-Merriweather text-2xl md:text-4xl font-semibold tracking-tight">
             {projectsText.header}
           </h1>
-          <p className="mt-8 px-3 pb-8 font-SourceSans text-lg sm:text-lg font-light text-gray-500 text-pretty mx-auto lg:w-3/4">
+          <p className="mt-8 px-3 pb-8 font-SourceSans sm:text-lg font-light text-gray-500 text-wrap mx-auto text-left lg:w-3/4">
             {projectsText.paragraph}
           </p>
         </div>
@@ -21,10 +21,10 @@ export default function PageProjects() {
                 <img className="w-full" src={item.imgProjectSrc} alt={item.imgProjectAlt} />
               </div>
               <div className="flex items-baseline w-full">
-                <h3 className="font-Merriweather text-2xl p-4">{item.name}</h3>
+                <h3 className="font-Merriweather text-xl md:text-2xl p-4">{item.name}</h3>
                 <img className="w-8 h-5 rounded-sm" src={item.imgFlagSrc} alt={item.imgFlagAlt} />
               </div>
-              <p className="font-SourceSans text-pretty p-4">{item.projectText}</p>
+              <p className="font-SourceSans text-pretty p-4 pt-0">{item.projectText}</p>
             </Link>
           ))}
         </div>
