@@ -262,14 +262,14 @@
       id: 'firstName',
       label: 'Vorname',
       type: 'text',
-      placeholder: '...',
+      placeholder: 'Erika',
       errorMessage: 'Bitte geben einen gültigen Vornamen an.'
     },
     {
       id: 'lastName',
       label: 'Nachname',
       type: 'text',
-      placeholder: '...',
+      placeholder: 'Musterfrau',
       errorMessage: 'Bitte geben einen gültigen Nachnamen an.'
     },
     {

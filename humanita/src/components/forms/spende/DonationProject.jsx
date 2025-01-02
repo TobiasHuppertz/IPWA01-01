@@ -8,7 +8,7 @@ export default function PageDonationProject() {
   
   const navigate = useNavigate();
   const { state } = useLocation();
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   useEffect(() => {
     reset(state);
@@ -21,12 +21,12 @@ export default function PageDonationProject() {
   return (
     <form onSubmit={onSubmit} className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl mb-16 bg-white m-4 p-4">
         <ol className="flex items-center justify-between w-full mb-4 sm:mb-5">
-            <li className="flex items-center w-full after:content-[''] after:w-full after:h-1 after:border-b after:border-green-700 after:border-4 after:inline-block ">
+            <li className="flex items-center w-full after:content-[''] after:w-full after:h-1 after:border-b after:border-green-700 after:border-4 nach:inline-block ">
             <div className="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full lg:h-12 lg:w-12 shrink-0">
                 <p>1</p>
             </div>
             </li>
-            <li className="flex items-center w-full after:content-[''] after:w-full after:h-1 after:border-b after:border-green-700 after:border-4 after:inline-block">
+            <li className="flex items-center w-full nach:content-[''] nach:w-full nach:h-1 nach:border-b nach:border-green-700 nach:border-4 nach:inline-block">
             <div className="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full lg:h-12 lg:w-12 shrink-0">
                 <p>2</p>
             </div>
@@ -70,6 +70,9 @@ export default function PageDonationProject() {
                 </h2>
             </div>
             ))}
+            {errors.country && (
+                <p className="text-red-500 before:inline before:content-['⚠_']">{errors.country.message}</p>
+            )}
         </div>
         <div className="flex justify-between w-full mt-8">
             <Link to="../DonationItems" state={state}>
