@@ -28,7 +28,6 @@ export default function Footer() {
       &copy; 2024 Humanita 
     </p>
   </footer>
-
   )
 }
 

@@ -19,7 +19,7 @@ export default function PageDonationProject() {
   });
   
   return (
-    <form onSubmit={onSubmit} className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl pb-2 bg-white m-4 p-4">
+    <form onSubmit={onSubmit} className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl mb-16 bg-white m-4 p-4">
         <ol className="flex items-center justify-between w-full mb-4 sm:mb-5">
             <li className="flex items-center w-full after:content-[''] after:w-full after:h-1 after:border-b after:border-green-700 after:border-4 after:inline-block ">
             <div className="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full lg:h-12 lg:w-12 shrink-0">

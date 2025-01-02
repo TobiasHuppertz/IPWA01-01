@@ -34,7 +34,7 @@ export default function PageConfirm() {
   }, [formFields.abgabe]);
 
   return (
-      <form className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl pb-2 bg-white m-4 p-4">
+      <form className="md:w-2/3 mx-auto max-w-6xl shadow-xl rounded-2xl mb-16 bg-white m-4 p-4">
         <section className="bg-white py-8 antialiased md:py-8">
           <div className="mx-auto max-w-2xl px-4 2xl:px-0">
             <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl mb-6">Zusammenfassung</h2>
