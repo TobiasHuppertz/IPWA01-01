@@ -2,7 +2,7 @@ import { newsletter } from "../constants"
 
 export default function PageNewsletter() {
     return (
-      <div className="relative isolate overflow-hidden bg-teal-50 py-16 px-6 lg:px-8 sm:py-24 lg:py-32 flex justify-center items-center">
+      <div className="relative isolate overflow-hidden bg-teal-50 py-16 sm:py-24 lg:py-32 flex justify-center items-center">
         <div className="max-w-lg lg:max-w-xl">
             <h2 className="font-Merriweather text-xl md:text-3xl text-center font-semibold tracking-tight">
                 {newsletter.header}
