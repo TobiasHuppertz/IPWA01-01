@@ -8,7 +8,7 @@ export default function PageDonationProject() {
   
   const navigate = useNavigate();
   const { state } = useLocation();
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   useEffect(() => {
     reset(state);
@@ -70,6 +70,9 @@ export default function PageDonationProject() {
             </h2>
           </div>
         ))}
+        {errors.country && (
+            <p className="text-red-500 before:inline before:content-['⚠_']">{errors.country.message}</p>
+        )}
       </div>
       <div className="flex justify-between w-full mt-8">
         <Link to="../DonationItems" state={state}>
