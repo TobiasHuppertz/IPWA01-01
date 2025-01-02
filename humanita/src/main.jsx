@@ -12,12 +12,13 @@ import PersonInformation from './components/forms/spende/PersonInformation.jsx';
 import DonationItems from './components/forms/spende/DonationItems.jsx';
 import DonationProject from './components/forms/spende/DonationProject.jsx'
 import Confirm from './components/forms/spende/Confirm.jsx';
+import Submit from './components/forms/spende/Submit.jsx'
 
 import PersonInformationKiosk from './components/forms/spende/kiosk/PersonInformation.jsx';
 import DonationItemsKiosk from './components/forms/spende/kiosk/DonationItems.jsx';
 import DonationProjectKiosk from './components/forms/spende/kiosk/DonationProject.jsx'
 import ConfirmKiosk from './components/forms/spende/kiosk/Confirm.jsx'
-import Submit from './components/forms/spende/kiosk/Submit.jsx'
+import SubmitKiosk from './components/forms/spende/kiosk/Submit.jsx'
 
 import Contact from './components/Contact.jsx';
 import LegalNotice from './components/LegalNotice.jsx';
@@ -33,13 +34,14 @@ createRoot(document.getElementById('root')).render(
               <Route path="DonationItems" element={<DonationItems />} />
               <Route path="DonationProject" element={<DonationProject />} />
               <Route path="Confirm" element={<Confirm />} />
+              <Route path="Submit" element={<Submit />} />
             </Route>
             <Route path="/forms/spende/kiosk" element={<DonationFormKiosk />}>
               <Route index element={<PersonInformationKiosk />} />
               <Route path="DonationItems" element={<DonationItemsKiosk />} />
               <Route path="DonationProject" element={<DonationProjectKiosk />} />
               <Route path="Confirm" element={<ConfirmKiosk />} />
-              <Route path="Submit" element={<Submit />} />
+              <Route path="Submit" element={<SubmitKiosk />} />
             </Route>
             <Route path="/legals" element={<LegalsLayout />}>
               <Route path="contact" element={<Contact />} />
