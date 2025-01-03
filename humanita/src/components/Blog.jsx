@@ -10,20 +10,29 @@ export default function Blog() {
         {blog.map((item) => (
           <div key={item.id} className="group w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl hover:bg-gray-100">
               <div className="flex item-center">
-                  <img src={item.imgSrc} alt={item.imgAlt} className="rounded-t-2xl w-full object-cover"></img>
+                  <img className="rounded-t-2xl w-full object-cover"
+                    src={item.imgSrc} 
+                    alt={item.imgAlt}
+                  />
               </div>
               <div className="p-4 lg:p-6 transition-all duration-300 rounded-b-2xl">
-                  <span className="text-green-600 font-medium mb-3 block">{item.date}</span>
-                  <h4 className="font-Merriweather text-lg text-gray-900 text-pretty font-medium mb-5">{item.blogHeader}</h4>
-                  <p className="font-SourceSans text-gray-500 line-clamp-3 leading-6 mb-10">{item.blogText}</p>
-                  <a href={item.blogUrl} className="cursor-pointer md:text-lg text-green-600 font-semibold">
-                    Weiterlesen..
+                  <span className="text-green-600 font-medium mb-3 block">
+                    {item.date}
+                  </span>
+                  <h4 className="font-Merriweather text-lg text-gray-900 text-pretty font-medium mb-5">
+                    {item.blogHeader}
+                  </h4>
+                  <p className="font-SourceSans text-gray-500 line-clamp-3 leading-6 mb-10">
+                    {item.blogText}
+                  </p>
+                  <a className="cursor-pointer md:text-lg text-green-600 font-semibold"
+                    href={item.blogUrl}>
+                      Weiterlesen..
                   </a>
               </div>
           </div>
         ))}
       </div>
-    </section>
-                                        
+    </section>                                 
   )
 }

@@ -6,11 +6,11 @@ import ContentLayout from './ContentLayout';
 export default function DonationForm() {
   return (
     <>
-    <Header />
-    <ContentLayout>
-      <Outlet />
-    </ContentLayout>
-    <Footer />
+      <Header />
+      <ContentLayout>
+        <Outlet />
+      </ContentLayout>
+      <Footer />
     </>
   )
 }
